@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="G Forces">
+ <MathConstants>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="G Lateral" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'G_LAT' [m/s2]" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Long" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'G_LON' [m/s2]" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Combined" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="sqrt(sqr('G Long' [G]) + sqr('G Lateral' [G]))" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Lateral stat" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="3" Interpolate="1" Script="sqrt(
+
+sqr('G Combined' [G])
+
+-
+
+sqr('G Long' [G])
+
+)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Long stat" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="sqrt(
+
+sqr('G Combined' [G])
+
+-
+
+sqr('G Lateral' [G])
+
+)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Overall" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="choose('G Combined' [G] &gt;= 1.0 AND 'G Combined' [G] &lt;= 3.0, 'G Combined' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Cornering" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="2" Interpolate="1" Script="choose('G Lateral stat' [G] &gt;= 0.5 AND 'G Lateral Stat' [G] &lt;= 5, 'G Lateral stat' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Braking" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="-choose('G Long' [G] &lt;= -1.0 AND 'G long' [G] &gt;= -3, 'G Long' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Traction" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="6" Interpolate="1" Script="choose('G Long' [G] &gt; 0 AND 'G Lateral stat' [G] &gt;= 0.5, choose('G Combined' [G] &lt;= 5, 'G combined' [G], invalid()), invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Corner Aero" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="3" Interpolate="1" Script="choose('G Lateral stat' [G] &gt;= 1.0 AND 'G Lateral stat' [G] &lt;= 5 AND 'SPEED' [km/h] &gt;= 120, 'G Lateral stat' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G lateral smooth stat section max" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="1" Interpolate="0" Script="stat_max(abs('G Lateral Smooth' [G]), 1, range_change(&quot;Outings:Laps:Track Sections:Default&quot;))" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Lat G At One" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="choose(abs('G Lateral' [G]) &gt; 0.99 AND abs('G lateral' [G]) &lt; 1.01, abs('G Lateral' [G]), invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Lateral Reverse" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="-'G_LAT' [m/s2]" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Traction Circle Sections" DisplayDPS="0" DisplayColorIndex="0" Interpolate="0" Script="choose('G Long' [G] &gt; 0 AND 'G Lateral' [G] &lt; -0.5, 1,
+
+choose('G Long' [G] &gt; 0 AND 'G Lateral' [G] &gt; 0.5, 2,
+
+choose('G Long' [G] &lt; 0 AND 'G Lateral' [G] &lt; -0.5, 3,
+
+choose('G Long' [G] &lt; 0 AND 'G lateral' [G] &gt; 0.5, 4, invalid())
+)
+)
+)" SampleRate="0" Unit=""/>
+  <MathExpression Id="Accel RH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="2" Interpolate="0" Script="choose('G Long' [G] &gt; 0 AND 'G Lateral' [G] &lt; -0.5, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Accel LH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="5" Interpolate="0" Script="choose('G Long' [G] &gt; 0 AND 'G Lateral' [G] &gt; 0.5, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Brake RH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="12" Interpolate="0" Script="choose('G Long' [G] &lt; 0 AND 'G Lateral' [G] &lt; -0.5, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Brake LH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="7" Interpolate="0" Script="choose('G Long' [G] &lt; 0 AND 'G Lateral' [G] &gt; 0.5, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="RH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="2" Interpolate="0" Script="choose('G Lateral' [G] &lt; -1, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="LH Corner Lap Time Percentage" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="2" Interpolate="0" Script="choose('G lateral' [G] &gt; 1, 100, 0)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Grip LH Cornering" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose('G Lateral' [G] &gt;= 0.5 AND 'G lateral' [G] &lt; 3.0, 'G Lateral' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip RH Cornering" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="-choose('G Lateral' [G] &lt;= -0.5 AND 'G Lateral' [G] &gt; -3.0, 'G Lateral' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Long TC" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="choose('TC' [..] &gt; 0, 'G Long' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Combined TC" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="choose('TC' [..] &gt; 0, 'G Combined' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Acceleration Total" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="integrate_dist('G Combined' [G], 'Corr Dist' [m])" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Combined Total Per Lap" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="integrate_dist('G Combined' [G], 'Corr Dist' [m], 1, range_change(&quot;Outings:Laps&quot;))" SampleRate="0" Unit=""/>
+  <MathExpression Id="G Combined Total Per Section" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="integrate_dist('G Combined' [G], 'Corr Dist' [m], 1, range_change(&quot;Outings:Laps:Track Sections:Default&quot;))" SampleRate="0" Unit=""/>
+  <MathExpression Id="G Lateral ABS" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="abs('G Lateral' [G])" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Long G Gain" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="choose('G Long' [G] &gt; 0 AND 'G Lateral stat' [G] &lt; 0.5 AND 'THROTTLE' [%] &gt; 95, derivative('G Long' [G]), invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="G Lateral Smooth" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="smooth('G Lateral' [G], 3)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Lateral Smooth ABS" DisplayUnit="G" DisplayDPS="3" DisplayColorIndex="4" Interpolate="1" Script="abs(smooth('G Lateral' [G], 3))" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G Combined ABS" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="choose('ABS' [..] &gt; 0, 'G Combined' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Log G Comb" DisplayDPS="4" DisplayColorIndex="7" Interpolate="1" Script="log('G Combined' [G])" SampleRate="0" Unit=""/>
+  <MathExpression Id="Log G Lat" DisplayDPS="4" DisplayColorIndex="3" Interpolate="1" Script="log('G Lateral' [G])" SampleRate="0" Unit=""/>
+  <MathExpression Id="Grip Corner Mechanical" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="12" Interpolate="1" Script="choose('G Lateral stat' [G] &gt;= 0.5 AND 'G Lateral stat' [G] &lt;= 5 AND 'SPEED' [km/h] &lt;= 120, 'G Lateral stat' [G], invalid())" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Grip Trail Braking" DisplayUnit="G" DisplayDPS="4" DisplayColorIndex="6" Interpolate="1" Script="choose('G Long' [G] &lt;= -0.5 AND 'G Lateral stat' [G] &gt;= 0.5, choose('G Combined' [G] &lt;= 5, 'G combined' [G], invalid()), invalid())" SampleRate="0" Unit="G"/>
+ </MathItems>
+</Maths>

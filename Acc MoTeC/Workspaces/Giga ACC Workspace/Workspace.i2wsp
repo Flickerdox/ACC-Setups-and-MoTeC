@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<Analysis Locale="English_United Kingdom.1252" DefaultLocale="C" Version="103" ShowOverlays="1" ExcludeUntrusted="1" IncludeOverlays="0" GraphTimeFormat="4" RemoveOnChanDblClick="0" ProfileId="Circuit" VideoDefaultViews="Driver" SetupSheetPasswdReqd="0" LapTimeDisplayFormat="0" LapTimeDisplayUnit="km/h" LapNameInOut="1" AutoLapNumber="0" LapTrustPC="3" Splitter.PC="8032">
+ <Resources/>
+ <LatGTrackGen LateralGChannel="G Lateral"/>
+ <DataSelect SelectFastestOnLoad="1" DefaultShowDisabled="0" MainColorSource="0">
+  <Explore HRef="C:\Users\Alessio\Documents\Assetto Corsa Competizione\MoTeC"/>
+  <DataSources>
+   <LoggedDataSource Name="C:\Users\Alessio\Documents\Assetto Corsa Competizione\MoTeC\Kyalami-ferrari_488_gt3_evo-36-2022.09.09-22.47.40.ld"/>
+  </DataSources>
+  <View Name="Laps" Color="128,240,0" View="Laps">
+   <Main Range.Id="C:\Users\Alessio\Documents\Assetto Corsa Competizione\MoTeC\Kyalami-ferrari_488_gt3_evo-36-2022.09.09-22.47.40.ld::::Lap 36"/>
+  </View>
+  <View Name="Outings" Color="240,128,0" View="Outings">
+   <Main Range.Id="C:\Users\Alessio\Documents\Assetto Corsa Competizione\MoTeC\Kyalami-ferrari_488_gt3_evo-36-2022.09.09-22.47.40.ld::::22:47:40,  "/>
+  </View>
+ </DataSelect>
+ <ChannelsWindow Method="2"/>
+ <CAN/>
+ <MoTeC.TrackPos Version="100" Name="TrackPosCtrl.inner" PosPC="0,0,145,598" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="" ShowDataLegend="1" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="1" LinkCursor="1" UseLocalColors="0">
+  <ComponentColorScheme>
+   <Entry Name="CptDataBackground">
+    <RenderMode Mode="SCREEN" RGB="0,128,0"/>
+    <RenderMode Mode="PRINT" RGB="255,255,255"/>
+   </Entry>
+   <Entry Name="CptDataForeground">
+    <RenderMode Mode="SCREEN" RGB="255,255,255"/>
+    <RenderMode Mode="PRINT" RGB="0,0,0"/>
+   </Entry>
+   <Entry Name="RangeMark">
+    <RenderMode Mode="SCREEN" RGB="200,0,0"/>
+    <RenderMode Mode="PRINT" RGB="200,0,0"/>
+   </Entry>
+  </ComponentColorScheme>
+  <TrackMapWindow>
+   <SizeScheme>
+    <SizeSchemeEntry Name="Cursor" INTValue="7"/>
+    <SizeSchemeEntry Name="Detail" INTValue="1"/>
+    <SizeSchemeEntry Name="Material" INTValue="1"/>
+   </SizeScheme>
+  </TrackMapWindow>
+ </MoTeC.TrackPos>
+ <ValuesWindow SplitterPos="8056" ShowTrack="0" ViewMode="0" ColumnWidthsSingle="160:80:48" ColumnWidthsMulti="169:48:80:48">
+  <MoTeC.TrackPos Version="100" Name="ValuesWindowTrack.1" PosPC="0,0,300,300" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="" ShowDataLegend="1" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="0" LinkCursor="1" UseLocalColors="0">
+   <ComponentColorScheme>
+    <Entry Name="CptDataBackground">
+     <RenderMode Mode="SCREEN" RGB="0,128,0"/>
+     <RenderMode Mode="PRINT" RGB="255,255,255"/>
+    </Entry>
+    <Entry Name="CptDataForeground">
+     <RenderMode Mode="SCREEN" RGB="255,255,255"/>
+     <RenderMode Mode="PRINT" RGB="0,0,0"/>
+    </Entry>
+    <Entry Name="RangeMark">
+     <RenderMode Mode="SCREEN" RGB="200,0,0"/>
+     <RenderMode Mode="PRINT" RGB="200,0,0"/>
+    </Entry>
+   </ComponentColorScheme>
+   <TrackMapWindow>
+    <SizeScheme>
+     <SizeSchemeEntry Name="Cursor" INTValue="7"/>
+     <SizeSchemeEntry Name="Detail" INTValue="1"/>
+     <SizeSchemeEntry Name="Material" INTValue="1"/>
+    </SizeScheme>
+   </TrackMapWindow>
+  </MoTeC.TrackPos>
+ </ValuesWindow>
+ <QuickSelectKeys>
+  <Key Name="F5" Customised="0" Prompted="1"/>
+  <Key Name="F6" Customised="0" Prompted="1"/>
+  <Key Name="F7" Customised="0" Prompted="0"/>
+  <Key Name="F8" Customised="0" Prompted="1"/>
+ </QuickSelectKeys>
+ <Workbooks Version="100" Name="My Workbooks" Active="Aero">
+  <Workbook XRef="Workbooks\ACC Default.i2wkb" Name="ACC Default"/>
+  <Workbook XRef="Workbooks\Basics.i2wkb" Name="Basics"/>
+  <Workbook XRef="Workbooks\Driver Performance.i2wkb" Name="Driver Performance"/>
+  <Workbook XRef="Workbooks\Driver Maps.i2wkb" Name="Driver Maps"/>
+  <Workbook XRef="Workbooks\Tires.i2wkb" Name="Tires"/>
+  <Workbook XRef="Workbooks\Suspension.i2wkb" Name="Suspension"/>
+  <Workbook XRef="Workbooks\Aero.i2wkb" Name="Aero"/>
+  <Workbook XRef="Workbooks\Track.i2wkb" Name="Track"/>
+  <Workbook XRef="Workbooks\Misc.i2wkb" Name="Misc"/>
+ </Workbooks>
+ <DockWindows>
+  <DockWindow Id="Alarms" Visible="0" IsDocked="1" IsPinned="1" DockOffset="0.25" DockSide="0" DockIndex="0" Height="160" Width="220"/>
+  <DockWindow Id="Data" Visible="1" IsDocked="1" IsPinned="0" DockOffset="0" DockSide="3" DockIndex="0" Height="376" Width="232"/>
+  <DockWindow Id="Channels" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="0" Height="110" Width="220"/>
+  <DockWindow Id="Reports" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="1" Height="110" Width="220"/>
+  <DockWindow Id="Layouts" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="2" Height="110" Width="220"/>
+  <DockWindow Id="Maths" Visible="1" IsDocked="1" IsPinned="1" DockOffset="0" DockSide="35" DockIndex="3" Height="110" Width="314"/>
+  <DockWindow Id="Track" Visible="1" IsDocked="1" IsPinned="0" DockOffset="0.42146" DockSide="3" DockIndex="0" Height="518" Width="232"/>
+ </DockWindows>
+ <TelemetrySettings/>
+ <DataExport Path="C:\Users\karra\Desktop\ACC\Analysis\notsomahsoom\Paul Ricard Ferrari 488" File="Quali.ld" Selection="2" Rate="0" Flags="1532"/>
+ <VideoGenerate VideoView="" Selection="0">
+  <OptionItems/>
+ </VideoGenerate>
+ <ConversionWizard ConverterId="0" InFilesChkd="1" InFilesDir="" InFoldersDir="" InSubFolderChkd="1" OutFolderChkd="0" OutFolder="" UnitMappingLastUsed="" OpenFilesChkd="0" OverwriteChkd="0"/>
+</Analysis>

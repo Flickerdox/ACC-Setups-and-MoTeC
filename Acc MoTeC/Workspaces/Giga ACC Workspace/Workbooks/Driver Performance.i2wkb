@@ -1,0 +1,1139 @@
+<?xml version="1.0"?>
+<Workbook Locale="English_United Kingdom.1252" DefaultLocale="C" Version="200" Name="Driver Performance" Profile="Circuit" Active="Worksheets">
+ <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Throttle Acceptance">
+  <Worksheet Version="200" Name="Driver Activity" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="246.6">
+       <Edges Mode="0" TopEdge="0" BottomEdge="161"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="SPEED">
+        <Trace Id="SPEED" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 6" ScaleMode="1" ScaleMin="-0.4" ScaleMax="0.4">
+       <Edges Mode="0" TopEdge="161" BottomEdge="344"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="1" Value="-0.1" Color="255,0,0"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Delta Section Variance">
+        <Trace Id="Delta Section Variance" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="344" BottomEdge="497"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="THROTTLE">
+        <Trace Id="THROTTLE" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="497" BottomEdge="662"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="BRAKE">
+        <Trace Id="BRAKE" DisplayUnit="%" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="662" BottomEdge="832"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="STEERANGLE">
+        <Trace Id="STEERANGLE" DisplayUnit="deg" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="832" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="GEAR">
+        <Trace Id="GEAR" DisplayUnit="no" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="G Forces" LinkTo="Laps" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="1" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="249"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Delta Section Variance">
+        <Trace Id="Delta Section Variance" DisplayUnit="s" DisplayDPS="2" Visible="0"/>
+        <Trace Id="Variance Gain" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Variance Loss" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="249" BottomEdge="485"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Corr Speed">
+        <Trace Id="Corr Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="1"/>
+        <Trace Id="BRAKE" DisplayUnit="%" DisplayDPS="0" Visible="1"/>
+        <Trace Id="THROTTLE" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="485" BottomEdge="750"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="G Long">
+        <Trace Id="G Lateral" DisplayUnit="G" DisplayDPS="4" Visible="1"/>
+        <Trace Id="G Long" DisplayUnit="G" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="750" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="G Combined">
+        <Trace Id="G Combined" DisplayUnit="G" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Variance" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,781,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="208"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="SPEED">
+        <Trace Id="SPEED" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="208" BottomEdge="427"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Instantaneous Variance">
+        <Trace Id="Instantaneous Variance" DisplayUnit="s" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="1" ScaleMin="-0.4" ScaleMax="0.4">
+       <Edges Mode="0" TopEdge="427" BottomEdge="681"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="1" Value="-0.1" Color="255,0,0"/>
+        <Line Index="2" Enabled="1" Value="0.1" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Delta Section Variance">
+        <Trace Id="Delta Section Variance" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="1" ScaleMin="-1" ScaleMax="1">
+       <Edges Mode="0" TopEdge="681" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Variance Gain">
+        <Trace Id="Variance Gain" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Variance Loss" DisplayUnit="s" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.TrackPos Version="100" Name="Track Position" PosPC="781,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="1" LinkCursor="1">
+     <TrackMapWindow>
+      <SizeScheme>
+       <SizeSchemeEntry Name="Cursor" INTValue="7"/>
+       <SizeSchemeEntry Name="Detail" INTValue="1"/>
+       <SizeSchemeEntry Name="Material" INTValue="1"/>
+      </SizeScheme>
+     </TrackMapWindow>
+    </MoTeC.TrackPos>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Lap Metrics Report" LinkTo="Laps" LockByGPSTime="0">
+   <Controls Active="Channel Report">
+    <MoTeC.ChannelReport RowMajor="0" TimeFormat="8" SplitterMode="1" SplitterPos="5005" ChartShowKey="1" ChartScaleMode="0" Version="100" Name="Channel Report" Caption="Channel Report - Laps" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0">
+     <LapReportGen Version="4" FilterRanges="1" Deltas="0" InclusiveSamples="0" DataExtent="2">
+      <ReportRange HeaderGroup="Driver"/>
+      <ReportRange HeaderGroup="Sessions"/>
+      <ReportRange HeaderGroup="Vehicle Id"/>
+      <ReportRange HeaderGroup="Events"/>
+      <ReportRange HeaderGroup="Outings:Laps"/>
+      <SummaryGenerator Name="rptsummary.min" Enabled="1" Color="185,220,255"/>
+      <SummaryGenerator Name="rptsummary.max" Enabled="1" Color="255,170,170"/>
+      <ChannelEntry ID="Calc Outing Time">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corr Speed">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Dist Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Distance">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Aggressive">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Release">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Coast Factor">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Steer Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Gear Changes">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Steering Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TC Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="ABS Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Overall">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Cornering">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Braking">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Traction">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Trail Braking">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Corner Aero">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Corner Mechanical">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Acceleration Total">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RPMS">
+       <Formula Name="rngmaths.float.min"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Curvature">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Understeer Angle">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Attitude Velocity">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Att Vel Oversteer Int ">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Att Vel Understeer Int">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Attitude Velocity Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Total Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Roll Ratio">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Total Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front-Rear Pitch">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Front Susp Height Ratio">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Bump Stops Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Bump Stops Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_PRESS_LF">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_PRESS_RF">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_PRESS_LR">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_PRESS_RR">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_TAIR_LF">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_TAIR_RF">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_TAIR_LR">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TYRE_TAIR_RR">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Temp Balance">
+       <Formula Name="rngmaths.float.min"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Left Right Tire Temp Difference">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Rear Tire Temp Difference">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel FL">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel FR">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel RL">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel RR">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+     </LapReportGen>
+    </MoTeC.ChannelReport>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Sections Report With Dampers" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Channel Report">
+    <MoTeC.ChannelReport RowMajor="0" TimeFormat="8" SplitterMode="1" SplitterPos="5000" ChartShowKey="1" ChartScaleMode="0" Version="100" Name="Channel Report" Caption="Channel Report - Laps" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0">
+     <LapReportGen Version="4" FilterRanges="1" Deltas="0" InclusiveSamples="0" DataExtent="2">
+      <ReportRange HeaderGroup="Driver"/>
+      <ReportRange HeaderGroup="Sessions"/>
+      <ReportRange HeaderGroup="Vehicle Id"/>
+      <ReportRange HeaderGroup="Events"/>
+      <ReportRange HeaderGroup="Outings:Laps:Track Sections:Default"/>
+      <ReportRange HeaderGroup="Outings:Laps"/>
+      <SummaryGenerator Name="rptsummary.min" Enabled="1" Color="185,220,255"/>
+      <SummaryGenerator Name="rptsummary.max" Enabled="1" Color="255,170,170"/>
+      <ChannelEntry ID="Calc Outing Time">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corr Speed">
+       <Formula Name="rngmaths.float.min"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Braking">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Corner Aero">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Corner Mechanical">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Cornering">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Overall">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Traction">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel FL">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel FR">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel RL">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Damper Vel RR">
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Zero Bin">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Bump">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Rebound">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Bump">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Rebound">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Bump">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Rebound">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Bump">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Rebound">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Slow Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Slow Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Fast Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Damper Fast Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Slow Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Slow Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Fast Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Damper Fast Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Slow Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Slow Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Fast Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Damper Fast Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Slow Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Slow Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Fast Bump Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Damper Fast Rebound Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Grip Trail Braking">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Understeer Angle">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Attitude Velocity">
+       <Formula Name="rngmaths.float.avg"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.stddev"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Curvature">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FL Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="FR Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RL Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="RR Wheel Temp Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Total Susp Height">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front-Rear Pitch">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Section Throttle Acceptance">
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Dist Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Distance">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Front Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Rear Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Total Roll Gradient [mm/G].A">
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Att Vel Oversteer Int ">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Att Vel Understeer Int">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Steer Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corner Entry Speed">
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corner Exit Speed">
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Attitude Velocity Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Brake Section Start Position">
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Steering Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Yaw Rate Smoothness">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Gear Changes">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="SPEED">
+       <Formula Name="rngmaths.float.range"/>
+       <Formula Name="rngmaths.float.start"/>
+       <Formula Name="rngmaths.float.end"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Stability KPI Section">
+       <Formula Name="rngmaths.float.min"/>
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.range"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+     </LapReportGen>
+    </MoTeC.ChannelReport>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Section Times" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time Report">
+    <MoTeC.TimeReport RowMajor="0" TimeFormat="16" SplitterMode="1" SplitterPos="5000" ChartShowKey="1" ChartScaleMode="0" Version="100" Name="Time Report" Caption="Time Report - Track Sections (All Laps)" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0">
+     <SectTimesReportGen Version="4" FilterRanges="1" InclusiveSamples="0" DataExtent="1" RowGroupName="Outings:Laps:Track Sections:Default">
+      <ReportRange HeaderGroup="Events"/>
+      <ReportRange HeaderGroup="Vehicles"/>
+      <ReportRange HeaderGroup="Sessions"/>
+      <ReportRange HeaderGroup="Outings"/>
+      <ReportRange HeaderGroup="Outings:Laps"/>
+      <SummaryGenerator Name="rptsummary.min" Enabled="1" Color="185,220,255"/>
+      <SummaryGenerator Name="rptsummary.near.min" Enabled="1">
+       <Band NPC="10" Color="128,255,128"/>
+       <Band NPC="20" Color="255,255,128"/>
+      </SummaryGenerator>
+      <SummaryGenerator Name="rptsummary.contiguous.min" Enabled="1" Color="255,0,0"/>
+      <SummaryGenerator Name="rptsummary.total" Enabled="1" Color="255,255,200"/>
+     </SectTimesReportGen>
+    </MoTeC.TimeReport>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Curvature" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="437"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Corner Exit Speed">
+        <Trace Id="Corr Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Corner Entry Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Corner Exit Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="4">
+       <Edges Mode="0" TopEdge="437" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Curvature">
+        <Trace Id="Curvature" DisplayUnit="1/m" DisplayDPS="4" Visible="0"/>
+        <Trace Id="Curvature Filtered" DisplayUnit="1/m" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="OS-US" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,799,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="330"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="SPEED">
+        <Trace Id="SPEED" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="330" BottomEdge="656"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Att Vel Int Lap">
+        <Trace Id="Att Vel Int Lap" DisplayUnit="deg/s" DisplayDPS="4" Visible="1"/>
+        <Trace Id="Att Vel Int Lap Smooth" DisplayUnit="deg/s" DisplayDPS="4" Visible="0"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="656" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="1" Value="4" Color="255,255,0"/>
+       </Lines>
+       <Traces ActiveTrace="Understeer Angle">
+        <Trace Id="Understeer Angle" DisplayUnit="deg" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="5" Snap="2"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.TrackReport Version="100" Name="Track Report" PosPC="800,559,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="0" ModeId="0" ShowDataLegend="0" ShowColorLegend="0" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="1" LinkCursor="1">
+     <TrackMapWindow>
+      <SizeScheme>
+       <SizeSchemeEntry Name="Cursor" INTValue="5"/>
+       <SizeSchemeEntry Name="Detail" INTValue="2"/>
+       <SizeSchemeEntry Name="Material" INTValue="6"/>
+      </SizeScheme>
+     </TrackMapWindow>
+     <ContourChannel ID="THROTTLE" Enabled="1" ScaleMode="1" UnitsMode="0">
+      <EvenWidthBandAxis PaletteMode="0" GradientMode="2" BandChanColor="64,255,64" AxisChanColor="64,255,64" Color1="0,255,0" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="0" LessMinBand="0" Continuous="0" BandMode="1" DataMin="5" DataMax="100" BandWidth="1.9" BandCount="50">
+       <ColorBand Flags="7" Min="5" Max="6.9" Color="213,255,213" Visible="1"/>
+       <ColorBand Flags="7" Min="6.9" Max="8.8" Color="206,255,206" Visible="1"/>
+       <ColorBand Flags="7" Min="8.8" Max="10.7" Color="198,255,198" Visible="1"/>
+       <ColorBand Flags="7" Min="10.7" Max="12.6" Color="191,255,191" Visible="1"/>
+       <ColorBand Flags="7" Min="12.6" Max="14.5" Color="185,255,185" Visible="1"/>
+       <ColorBand Flags="7" Min="14.5" Max="16.4" Color="179,255,179" Visible="1"/>
+       <ColorBand Flags="7" Min="16.4" Max="18.3" Color="170,255,170" Visible="1"/>
+       <ColorBand Flags="7" Min="18.3" Max="20.2" Color="164,255,164" Visible="1"/>
+       <ColorBand Flags="7" Min="20.2" Max="22.1" Color="157,255,157" Visible="1"/>
+       <ColorBand Flags="7" Min="22.1" Max="24" Color="151,255,151" Visible="1"/>
+       <ColorBand Flags="7" Min="24" Max="25.9" Color="142,255,142" Visible="1"/>
+       <ColorBand Flags="7" Min="25.9" Max="27.8" Color="136,255,136" Visible="1"/>
+       <ColorBand Flags="7" Min="27.8" Max="29.7" Color="130,255,130" Visible="1"/>
+       <ColorBand Flags="7" Min="29.7" Max="31.6" Color="123,255,123" Visible="1"/>
+       <ColorBand Flags="7" Min="31.6" Max="33.5" Color="115,255,115" Visible="1"/>
+       <ColorBand Flags="7" Min="33.5" Max="35.4" Color="108,255,108" Visible="1"/>
+       <ColorBand Flags="7" Min="35.4" Max="37.3" Color="102,255,102" Visible="1"/>
+       <ColorBand Flags="7" Min="37.3" Max="39.2" Color="94,255,94" Visible="1"/>
+       <ColorBand Flags="7" Min="39.2" Max="41.1" Color="87,255,87" Visible="1"/>
+       <ColorBand Flags="7" Min="41.1" Max="43" Color="81,255,81" Visible="1"/>
+       <ColorBand Flags="7" Min="43" Max="44.9" Color="74,255,74" Visible="1"/>
+       <ColorBand Flags="7" Min="44.9" Max="46.8" Color="66,255,66" Visible="1"/>
+       <ColorBand Flags="7" Min="46.8" Max="48.7" Color="60,255,60" Visible="1"/>
+       <ColorBand Flags="7" Min="48.7" Max="50.6" Color="53,255,53" Visible="1"/>
+       <ColorBand Flags="7" Min="50.6" Max="52.5" Color="47,255,47" Visible="1"/>
+       <ColorBand Flags="7" Min="52.5" Max="54.4" Color="38,255,38" Visible="1"/>
+       <ColorBand Flags="7" Min="54.4" Max="56.3" Color="32,255,32" Visible="1"/>
+       <ColorBand Flags="7" Min="56.3" Max="58.2" Color="26,255,26" Visible="1"/>
+       <ColorBand Flags="7" Min="58.2" Max="60.1" Color="19,255,19" Visible="1"/>
+       <ColorBand Flags="7" Min="60.1" Max="62" Color="11,255,11" Visible="1"/>
+       <ColorBand Flags="7" Min="62" Max="63.9" Color="4,255,4" Visible="1"/>
+       <ColorBand Flags="7" Min="63.9" Max="65.8" Color="0,253,0" Visible="1"/>
+       <ColorBand Flags="7" Min="65.8" Max="67.7" Color="0,247,0" Visible="1"/>
+       <ColorBand Flags="7" Min="67.7" Max="69.6" Color="0,238,0" Visible="1"/>
+       <ColorBand Flags="7" Min="69.6" Max="71.5" Color="0,232,0" Visible="1"/>
+       <ColorBand Flags="7" Min="71.5" Max="73.4" Color="0,225,0" Visible="1"/>
+       <ColorBand Flags="7" Min="73.4" Max="75.3" Color="0,217,0" Visible="1"/>
+       <ColorBand Flags="7" Min="75.3" Max="77.2" Color="0,210,0" Visible="1"/>
+       <ColorBand Flags="7" Min="77.2" Max="79.1" Color="0,204,0" Visible="1"/>
+       <ColorBand Flags="7" Min="79.1" Max="81" Color="0,198,0" Visible="1"/>
+       <ColorBand Flags="7" Min="81" Max="82.9" Color="0,189,0" Visible="1"/>
+       <ColorBand Flags="7" Min="82.9" Max="84.8" Color="0,183,0" Visible="1"/>
+       <ColorBand Flags="7" Min="84.8" Max="86.7" Color="0,176,0" Visible="1"/>
+       <ColorBand Flags="7" Min="86.7" Max="88.6" Color="0,170,0" Visible="1"/>
+       <ColorBand Flags="7" Min="88.6" Max="90.5" Color="0,162,0" Visible="1"/>
+       <ColorBand Flags="7" Min="90.5" Max="92.4" Color="0,155,0" Visible="1"/>
+       <ColorBand Flags="7" Min="92.4" Max="94.3" Color="0,149,0" Visible="0"/>
+       <ColorBand Flags="7" Min="94.3" Max="96.2" Color="0,142,0" Visible="1"/>
+       <ColorBand Flags="7" Min="96.2" Max="98.1" Color="0,134,0" Visible="1"/>
+       <ColorBand Flags="15" Min="98.1" Max="100" Color="0,128,0" Visible="1"/>
+      </EvenWidthBandAxis>
+     </ContourChannel>
+     <ContourChannel ID="BRAKE" Enabled="1" ScaleMode="1" UnitsMode="0">
+      <EvenWidthBandAxis PaletteMode="0" GradientMode="2" BandChanColor="186,117,255" AxisChanColor="186,117,255" Color1="255,0,0" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="0" LessMinBand="0" Continuous="0" BandMode="1" DataMin="5" DataMax="100" BandWidth="1.9" BandCount="50">
+       <ColorBand Flags="7" Min="5" Max="6.9" Color="255,213,213" Visible="1"/>
+       <ColorBand Flags="7" Min="6.9" Max="8.8" Color="255,206,206" Visible="1"/>
+       <ColorBand Flags="7" Min="8.8" Max="10.7" Color="255,198,198" Visible="1"/>
+       <ColorBand Flags="7" Min="10.7" Max="12.6" Color="255,191,191" Visible="1"/>
+       <ColorBand Flags="7" Min="12.6" Max="14.5" Color="255,185,185" Visible="1"/>
+       <ColorBand Flags="7" Min="14.5" Max="16.4" Color="255,179,179" Visible="1"/>
+       <ColorBand Flags="7" Min="16.4" Max="18.3" Color="255,170,170" Visible="1"/>
+       <ColorBand Flags="7" Min="18.3" Max="20.2" Color="255,164,164" Visible="1"/>
+       <ColorBand Flags="7" Min="20.2" Max="22.1" Color="255,157,157" Visible="1"/>
+       <ColorBand Flags="7" Min="22.1" Max="24" Color="255,151,151" Visible="1"/>
+       <ColorBand Flags="7" Min="24" Max="25.9" Color="255,142,142" Visible="1"/>
+       <ColorBand Flags="7" Min="25.9" Max="27.8" Color="255,136,136" Visible="1"/>
+       <ColorBand Flags="7" Min="27.8" Max="29.7" Color="255,130,130" Visible="1"/>
+       <ColorBand Flags="7" Min="29.7" Max="31.6" Color="255,123,123" Visible="1"/>
+       <ColorBand Flags="7" Min="31.6" Max="33.5" Color="255,115,115" Visible="1"/>
+       <ColorBand Flags="7" Min="33.5" Max="35.4" Color="255,108,108" Visible="1"/>
+       <ColorBand Flags="7" Min="35.4" Max="37.3" Color="255,102,102" Visible="1"/>
+       <ColorBand Flags="7" Min="37.3" Max="39.2" Color="255,94,94" Visible="1"/>
+       <ColorBand Flags="7" Min="39.2" Max="41.1" Color="255,87,87" Visible="1"/>
+       <ColorBand Flags="7" Min="41.1" Max="43" Color="255,81,81" Visible="1"/>
+       <ColorBand Flags="7" Min="43" Max="44.9" Color="255,74,74" Visible="1"/>
+       <ColorBand Flags="7" Min="44.9" Max="46.8" Color="255,66,66" Visible="1"/>
+       <ColorBand Flags="7" Min="46.8" Max="48.7" Color="255,60,60" Visible="1"/>
+       <ColorBand Flags="7" Min="48.7" Max="50.6" Color="255,53,53" Visible="1"/>
+       <ColorBand Flags="7" Min="50.6" Max="52.5" Color="255,47,47" Visible="1"/>
+       <ColorBand Flags="7" Min="52.5" Max="54.4" Color="255,38,38" Visible="1"/>
+       <ColorBand Flags="7" Min="54.4" Max="56.3" Color="255,32,32" Visible="1"/>
+       <ColorBand Flags="7" Min="56.3" Max="58.2" Color="255,26,26" Visible="1"/>
+       <ColorBand Flags="7" Min="58.2" Max="60.1" Color="255,19,19" Visible="1"/>
+       <ColorBand Flags="7" Min="60.1" Max="62" Color="255,11,11" Visible="1"/>
+       <ColorBand Flags="7" Min="62" Max="63.9" Color="255,4,4" Visible="1"/>
+       <ColorBand Flags="7" Min="63.9" Max="65.8" Color="253,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="65.8" Max="67.7" Color="247,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="67.7" Max="69.6" Color="238,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="69.6" Max="71.5" Color="232,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="71.5" Max="73.4" Color="225,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="73.4" Max="75.3" Color="217,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="75.3" Max="77.2" Color="210,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="77.2" Max="79.1" Color="204,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="79.1" Max="81" Color="198,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="81" Max="82.9" Color="189,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="82.9" Max="84.8" Color="183,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="84.8" Max="86.7" Color="176,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="86.7" Max="88.6" Color="170,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="88.6" Max="90.5" Color="162,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="90.5" Max="92.4" Color="155,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="92.4" Max="94.3" Color="149,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="94.3" Max="96.2" Color="142,0,0" Visible="1"/>
+       <ColorBand Flags="7" Min="96.2" Max="98.1" Color="134,0,0" Visible="1"/>
+       <ColorBand Flags="15" Min="98.1" Max="100" Color="128,0,0" Visible="1"/>
+      </EvenWidthBandAxis>
+     </ContourChannel>
+     <Notes ReportGroup="Outings:Laps:Track Sections:Default"/>
+     <NoteChannel ID="Corr Speed" Enabled="0" FormulaClass="0" FormulaName="rngmaths.float.max" SectionType="Straights">
+      <ExtraChannels>
+       <Channel ID="Engine RPM"/>
+      </ExtraChannels>
+     </NoteChannel>
+     <NoteChannel ID="Corr Speed" Enabled="0" FormulaClass="0" FormulaName="rngmaths.float.min" SectionType="Corners">
+      <ExtraChannels>
+       <Channel ID="Engine RPM"/>
+      </ExtraChannels>
+     </NoteChannel>
+     <NoteChannel ID="Gear" Enabled="0" FormulaClass="1" FormulaName="Delta" SectionType=""/>
+    </MoTeC.TrackReport>
+    <MoTeC.Wheel Version="100" Name="Wheel" Caption="STEERANGLE" PosPC="800,0,1000,300" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="1" MinimumValue="-120" MaximumValue="120" WheelColor="255,0,0" WheelColorEnabled="0" ColorBanding="0" InversePolarity="0">
+     <GaugeData Id="STEERANGLE" DisplayUnit="deg" DisplayDPS="0" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Wheel>
+    <MoTeC.Dial Version="100" Name="Dial" Caption="SPEED" PosPC="798,300,1000,559" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="1" MinimumValue="0" MaximumValue="250" IndicatorColor="255,160,32" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="1">
+     <GaugeData Id="SPEED" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Dial>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Brake Bal Trace" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 4">
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="192"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="SPEED">
+        <Trace Id="SPEED" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="192" BottomEdge="391"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="G Long">
+        <Trace Id="G Long" DisplayUnit="G" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="391" BottomEdge="596"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Brake Temp Balance">
+        <Trace Id="BRAKE" DisplayUnit="%" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Brake Temp Balance" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="596" BottomEdge="798"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="BRAKE_TEMP_LF">
+        <Trace Id="BRAKE_TEMP_LF" DisplayUnit="C" DisplayDPS="0" Visible="1"/>
+        <Trace Id="BRAKE_TEMP_RF" DisplayUnit="C" DisplayDPS="0" Visible="1"/>
+        <Trace Id="BRAKE_TEMP_LR" DisplayUnit="C" DisplayDPS="0" Visible="1"/>
+        <Trace Id="BRAKE_TEMP_RR" DisplayUnit="C" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 6" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="798" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Brake Speed">
+        <Trace Id="Brake Aggressive" DisplayUnit="%/s" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Brake Release" DisplayUnit="%/s" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Brake Speed" DisplayUnit="%/s" DisplayDPS="2" Visible="0"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Throttle Acceptance" LinkTo="Laps" DataDomain="1" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="446,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="1" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 8">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="161"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Corner Exit Speed">
+        <Trace Id="Corr Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="0"/>
+        <Trace Id="Corner Exit Speed" DisplayUnit="km/h" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="161" BottomEdge="329"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Max Lat G Section">
+        <Trace Id="G Lateral stat" DisplayUnit="G" DisplayDPS="4" Visible="1"/>
+        <Trace Id="Max Lat G Section" DisplayUnit="G" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Section Max Lat G At Throttle" DisplayUnit="G" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="329" BottomEdge="497"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="THROTTLE">
+        <Trace Id="THROTTLE" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+        <Trace Id="Throttle TC" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 8" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="497" BottomEdge="665"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Section Throttle Acceptance">
+        <Trace Id="Section Throttle Acceptance" DisplayUnit="%" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="665" BottomEdge="833"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Curvature Filtered">
+        <Trace Id="Curvature Filtered" DisplayUnit="1/m" DisplayDPS="4" Visible="1"/>
+        <Trace Id="Curvature" DisplayUnit="1/m" DisplayDPS="4" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="833" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Speed">
+        <Trace Id="Throttle Speed" DisplayUnit="%/s" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="2"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.ChannelReport RowMajor="0" TimeFormat="8" ReportName="Throttle Acceptance Per Section" SplitterMode="1" SplitterPos="5000" ChartShowKey="1" ChartScaleMode="0" Version="100" Name="Channel Report (1)" Caption="Channel Report - Laps" PosPC="0,0,444,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0">
+     <LapReportGen Version="4" FilterRanges="1" Deltas="0" InclusiveSamples="0" DataExtent="1">
+      <ReportRange HeaderGroup="Driver"/>
+      <ReportRange HeaderGroup="Outings:Laps:Track Sections:Default:Corners"/>
+      <ReportRange HeaderGroup="Outings:Laps"/>
+      <SummaryGenerator Name="rptsummary.min" Enabled="1" Color="185,220,255"/>
+      <SummaryGenerator Name="rptsummary.max" Enabled="1" Color="255,170,170"/>
+      <ChannelEntry ID="Calc Outing Time">
+       <Formula Name="rngmaths.float.range"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Section Throttle Acceptance">
+       <Formula Name="rngmaths.float.max"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Throttle Speed">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corr Speed">
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Corner Exit Speed">
+       <Formula Name="rngmaths.float.min"/>
+      </ChannelEntry>
+      <ChannelEntry ID="G Lateral Smooth ABS">
+       <Formula Name="rngmaths.float.max"/>
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="Curvature">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+      <ChannelEntry ID="TC Per">
+       <Formula Name="rngmaths.float.avg"/>
+      </ChannelEntry>
+     </LapReportGen>
+    </MoTeC.ChannelReport>
+   </Controls>
+  </Worksheet>
+ </Worksheets>
+</Workbook>

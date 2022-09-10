@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="aero">
+ <MathConstants>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Sus load front" DisplayUnit="N" DisplayDPS="2" DisplayColorIndex="9" Interpolate="1" Script="('SUS_TRAVEL_LF' [mm]+'SUS_TRAVEL_RF' [mm]) * 'Wheelrate front' [N/mm]" SampleRate="0" Unit="N"/>
+  <MathExpression Id="Sus load rear" DisplayUnit="N" DisplayDPS="2" DisplayColorIndex="8" Interpolate="1" Script="('SUS_TRAVEL_LR' [mm]+'SUS_TRAVEL_RR' [mm]) * 'Wheelrate rear' [N/mm]" SampleRate="0" Unit="N"/>
+  <MathExpression Id="Sus load" DisplayUnit="N" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Sus load front' [N] + 'Sus load rear' [N]" SampleRate="0" Unit="N"/>
+  <MathExpression Id="CP" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="('Sus load front' [N]-'Sus load rear' [N]) / ('Sus load front' [N]+'Sus load rear' [N])" SampleRate="0" Unit=""/>
+  <MathExpression Id="Aero Balance" DisplayUnit="N" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Sus load front' [N]-'Sus load rear' [N]" SampleRate="0" Unit="N"/>
+  <MathExpression Id="Aero Gate" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="('SPEED' [km/h]  &gt; 100)  AND ('isWOT'  == 1)" SampleRate="0" Unit=""/>
+ </MathItems>
+</Maths>

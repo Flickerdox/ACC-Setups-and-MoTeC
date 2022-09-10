@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="Tires">
+ <MathConstants>
+  <MathConstant Name="Dry Tire Optimal 2019" Value="27.75" Unit="psi" Comment="27.5 to 28.0"/>
+  <MathConstant Name="Dry Tire Optimal 2020" Value="27.68" Unit="psi" Comment="27.43 to 27.93"/>
+  <MathConstant Name="Dry Tire Optimal GT4" Value="27.1" Unit="psi" Comment="26.8 to 27.4"/>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+  <MathConstant Name="Wet Tire Optimal" Value="30.25" Unit="psi" Comment="29.5 to 31.0"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Tire 2020 Pressure Change FL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2020' [psi] - 'TYRE_PRESS_LF' [..]" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2020 Pressure Change FR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2020' [psi] - 'TYRE_PRESS_RF' [..]" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2020 Pressure Change RL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2020' [psi] - 'TYRE_PRESS_LR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2020 Pressure Change RR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2020' [psi] - 'TYRE_PRESS_RR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2019 Pressure Change FL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2019' [psi] -  'TYRE_PRESS_LF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2019 Pressure Change FR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2019' [psi] -  'TYRE_PRESS_RF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2019 Pressure Change RL " DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2019' [psi] -  'TYRE_PRESS_LR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire 2019 Pressure Change RR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal 2019' [psi] -  'TYRE_PRESS_RR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire Wet Pressure Change FL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Wet Tire Optimal' [psi] -  'TYRE_PRESS_LF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire Wet Pressure Change FR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Wet Tire Optimal' [psi] -  'TYRE_PRESS_RF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire Wet Pressure Change RL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Wet Tire Optimal' [psi] -  'TYRE_PRESS_LR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire Wet Pressure Change RR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Wet Tire Optimal' [psi] -  'TYRE_PRESS_RR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Wheel Speed FL" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'WHEEL_SPEED_LF' [km/h]" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Wheel Speed FR" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'WHEEL_SPEED_RF' [km/h]" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Wheel Speed RL" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'WHEEL_SPEED_LR' [km/h]" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Wheel Speed RR" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'WHEEL_SPEED_RR' [km/h]" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Left Right Tire Temp Difference" DisplayUnit="C" DisplayDPS="3" DisplayColorIndex="4" Interpolate="1" Script="('TYRE_TAIR_LF' [C] + 'TYRE_TAIR_LR' [C])/2 
+- 
+('TYRE_TAIR_RF' [C] + 'TYRE_TAIR_RR' [C])/2" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Front Rear Tire Temp Difference" DisplayUnit="C" DisplayDPS="3" DisplayColorIndex="6" Interpolate="1" Script="('TYRE_TAIR_LF' [C] + 'TYRE_TAIR_RF' [C])/2 
+- 
+('TYRE_TAIR_LR' [C] + 'TYRE_TAIR_RR' [C])/2" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Left Right Tire Pressure Difference" DisplayUnit="psi" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="(('TYRE_PRESS_LF' [..] + 'TYRE_PRESS_LR' [..]) / 2)
+
+-
+
+(('TYRE_PRESS_RF' [..] + 'TYRE_PRESS_RR' [..]) / 2)
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Front Rear Tire Pressure Difference" DisplayUnit="psi" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="(('TYRE_PRESS_LF' [..] + 'TYRE_PRESS_RF' [..]) / 2)
+
+-
+
+(('TYRE_PRESS_LR' [..] + 'TYRE_PRESS_RR' [..]) / 2)
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Front Tire Pressure Avg" DisplayUnit="psi" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="(('TYRE_PRESS_LF' [..] + 'TYRE_PRESS_RF' [..]) / 2)" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Rear Tire Pressure Avg" DisplayUnit="psi" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="(('TYRE_PRESS_LR' [..] + 'TYRE_PRESS_RR' [..]) / 2)" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Total Tire Pressure Avg" DisplayUnit="psi" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="('TYRE_PRESS_LR' [..] + 'TYRE_PRESS_RR' [..] + 'TYRE_PRESS_LF' [..] + 'TYRE_PRESS_RF' [..]) / 4" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Rear Tire Temp Avg" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="('TYRE_TAIR_LR' [C] + 'TYRE_TAIR_RR' [C])/2" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Front Tire Temp Avg" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="('TYRE_TAIR_LF' [C] + 'TYRE_TAIR_RF' [C])/2" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Total Tire Temp Avg" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="('TYRE_TAIR_LF' [C] + 'TYRE_TAIR_RF' [C] + 'TYRE_TAIR_LR' [C] + 'TYRE_TAIR_RR' [C])/4" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Tire GT4 Pressure Change FL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal GT4' [psi] -  'TYRE_PRESS_LF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire GT4 Pressure Change FR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal GT4' [psi] -  'TYRE_PRESS_RF' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire GT4 Pressure Change RL" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal GT4' [psi] -  'TYRE_PRESS_LR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Tire GT4 Pressure Change RR" DisplayUnit="psi" DisplayDPS="1" DisplayColorIndex="0" Interpolate="1" Script="'Dry Tire Optimal GT4' [psi] -  'TYRE_PRESS_RR' [..]
+" SampleRate="0" Unit="psi"/>
+  <MathExpression Id="Rear Speed L-R Difference" DisplayUnit="km/h" DisplayDPS="1" DisplayColorIndex="6" Interpolate="1" Script="'Wheel Speed RL' [km/h] - 'Wheel Speed RR' [km/h]" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="RL Slip Ratio" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="100 * 
+(
+(
+'Wheel Speed RL' [km/h]
+/
+(0.5 * ('Wheel Speed FL' [km/h] + 'Wheel Speed FR' [km/h]))
+)
+- 1
+)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Slip Ratio" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="choose('Corr Speed' [km/h] &gt; 30,
+
+100 * (
+(
+( ( 'WHEEL_SPEED_LR' [m/s] + 'WHEEL_SPEED_RR' [m/s] ) / 2 )
+
+/
+
+( ( 'WHEEL_SPEED_LF' [m/s] + 'WHEEL_SPEED_RF' [m/s] ) / 2 )
+)
+- 1)
+
+, invalid())" SampleRate="0" Unit="%"/>
+  <MathExpression Id="RR Slip Ratio" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="13" Interpolate="1" Script="100 * 
+(
+(
+'Wheel Speed RR' [km/h]
+/
+(0.5 * ('Wheel Speed FL' [km/h] + 'Wheel Speed FR' [km/h]))
+)
+- 1
+)" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Reference Speed V0" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="('Wheel Speed FL' [km/h] + 'Wheel Speed FR' [km/h]) * 0.5" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Driven Speed" DisplayUnit="km/h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="('Wheel Speed RL' [km/h] + 'Wheel Speed RR' [km/h]) * 0.5" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Slip Ratio TC" DisplayUnit="%" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="choose('TC' [..] &gt; 0, 'Slip Ratio' [%], invalid())" SampleRate="0" Unit="%"/>
+  <MathExpression Id="Rear Speed L-R Difference TC" DisplayUnit="km/h" DisplayDPS="1" DisplayColorIndex="7" Interpolate="1" Script="choose('TC' [..] &gt; 0, 'Rear Speed L-R Difference' [km/h], invalid())" SampleRate="0" Unit="km/h"/>
+  <MathExpression Id="Front L-R Temp Diff" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'TYRE_TAIR_LF' [C] - 'TYRE_TAIR_RF' [C]" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Rear L-R Temp Diff" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'TYRE_TAIR_LR' [C] - 'TYRE_TAIR_RR' [C]" SampleRate="0" Unit="C"/>
+  <MathExpression Id="FL Wheel Temp Speed" DisplayUnit="C/s" DisplayDPS="4" DisplayColorIndex="4" Interpolate="1" Script="derivative('TYRE_TAIR_LF' [C])" SampleRate="0" Unit="C/s"/>
+  <MathExpression Id="FR Wheel Temp Speed" DisplayUnit="C/s" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="derivative('TYRE_TAIR_RF' [C])" SampleRate="0" Unit="C/s"/>
+  <MathExpression Id="RL Wheel Temp Speed" DisplayUnit="C/s" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="derivative('TYRE_TAIR_LR' [C])" SampleRate="0" Unit="C/s"/>
+  <MathExpression Id="RR Wheel Temp Speed" DisplayUnit="C/s" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="derivative('TYRE_TAIR_RR' [C])" SampleRate="0" Unit="C/s"/>
+ </MathItems>
+</Maths>

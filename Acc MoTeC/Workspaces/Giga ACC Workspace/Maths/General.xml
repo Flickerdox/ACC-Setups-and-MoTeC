@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="General">
+ <MathConstants>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="glat" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'G_LAT' [m/s2]" SampleRate="0" Unit="G"/>
+  <MathExpression Id="glong" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'G_LON' [m/s2]" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Oversteer" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="smooth(choose('Corr Speed'[km/h] &lt; 50, 0, sgn('glat' [m/s/s]) * (('Vehicle Wheelbase'[m] * 'glat' [m/s/s] / sqr('Corr Speed'[m/s])) - sgn(stat_mean('Steered Angle'[rad] * 'glat' [m/s/s])) * 'Steered Angle'[rad])), 0.2)" SampleRate="0" Unit="rad"/>
+  <MathExpression Id="TC in %" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="'TC' [..] *100" SampleRate="0" Unit=""/>
+  <MathExpression Id="ABS in %" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'ABS' [..] *100
+" SampleRate="0" Unit=""/>
+  <MathExpression Id="G_LON_smooth" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="smooth('G_LON' [m/s2],0.1)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G_LAT_smooth" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="smooth('G_LAT' [m/s2], 0.1)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="d/dx glat" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="derivative('G_LAT_smooth')" SampleRate="0" Unit=""/>
+  <MathExpression Id="d/dx glon" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="derivative('G_LON_smooth')" SampleRate="0" Unit=""/>
+  <MathExpression Id="G_LAT_abs" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="abs('G_LAT_smooth' [G])" SampleRate="0" Unit="G"/>
+  <MathExpression Id="G_Vector" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="sqrt(('G_LAT' [m/s2]^2 + 'G_LON' [m/s2]^2))" SampleRate="0" Unit="G"/>
+  <MathExpression Id="steered angle" DisplayUnit="rad" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'STEERANGLE' [deg]/11" SampleRate="0" Unit="deg"/>
+  <MathExpression Id="Steerangle abs" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="abs('STEERANGLE' [deg])" SampleRate="0" Unit="deg"/>
+ </MathItems>
+</Maths>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="SETUP SCREEN VALUES (INSERT DATA)">
+ <MathConstants>
+  <MathConstant Name="PI" Value="3.14159265" Unit=""/>
+  <MathConstant Name="Wheelrate front" Value="151000" Unit="N/m"/>
+  <MathConstant Name="Wheelrate rear" Value="113000" Unit="N/m"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Ingame RH Front" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" EnumerationName="" Script="58" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Ingame RH Rear" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" EnumerationName="" Script="72" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Rake Offset Adjustment" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" EnumerationName="" Script="4" SampleRate="0" Unit="mm"/>
+ </MathItems>
+</Maths>

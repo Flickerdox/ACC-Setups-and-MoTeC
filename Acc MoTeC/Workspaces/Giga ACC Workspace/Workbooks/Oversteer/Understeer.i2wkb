@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Workbook Locale="English_United States.1252" DefaultLocale="C" Version="200" Name="Oversteer/Understeer" Profile="Circuit" Active="Worksheets">
+ <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Traces">
+  <Worksheet Version="200" Name="Traces" LinkTo="Laps" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,776,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="1" BandGroup="Outings:Laps:Track Sections:Default" BandMode="1" OverlapMode="1" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 2">
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="332"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="G Lateral">
+        <Trace Id="G Lateral" DisplayUnit="G" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="332" BottomEdge="664"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="ABS">
+        <Trace Id="THROTTLE" DisplayUnit="%" DisplayDPS="0" Visible="1"/>
+        <Trace Id="TC" DisplayUnit=".." DisplayDPS="0" Visible="1"/>
+        <Trace Id="ABS" DisplayUnit=".." DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="664" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Oversteer">
+        <Trace Id="Oversteer" DisplayUnit="deg" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.TrackPos Version="100" Name="Track Position" PosPC="775,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="1" LinkCursor="1">
+     <TrackMapWindow>
+      <SizeScheme>
+       <SizeSchemeEntry Name="Cursor" INTValue="7"/>
+       <SizeSchemeEntry Name="Detail" INTValue="1"/>
+       <SizeSchemeEntry Name="Material" INTValue="1"/>
+      </SizeScheme>
+     </TrackMapWindow>
+    </MoTeC.TrackPos>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="O/U Heat Map" LinkTo="Laps" LockByGPSTime="0">
+   <Controls Active="Rainbow Track">
+    <MoTeC.RainbowTrack Version="100" Name="Rainbow Track" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ShowSectLabels="0" ShowSectMarks="1" LinkCursor="1">
+     <TrackMapWindow>
+      <SizeScheme>
+       <SizeSchemeEntry Name="Cursor" INTValue="10"/>
+       <SizeSchemeEntry Name="Detail" INTValue="2"/>
+       <SizeSchemeEntry Name="Material" INTValue="6"/>
+      </SizeScheme>
+     </TrackMapWindow>
+     <ContourChannel ID="Oversteer" Enabled="1" ScaleMode="0" UnitsMode="0">
+      <EvenWidthBandAxis PaletteMode="1" GradientMode="0" BandChanColor="244,244,0" AxisChanColor="244,244,0" Color1="255,64,64" Color2="64,64,255" ReversGradient="1" CentredBands="1" GreaterMaxBand="0" LessMinBand="0" Continuous="0" BandMode="0" DataMin="-9" DataMax="9" BandWidth="2" BandCount="10">
+       <ColorBand Flags="7" Min="-11" Max="-9" Color="255,64,64" Visible="1"/>
+       <ColorBand Flags="7" Min="-9" Max="-7" Color="255,150,64" Visible="1"/>
+       <ColorBand Flags="7" Min="-7" Max="-5" Color="255,236,64" Visible="1"/>
+       <ColorBand Flags="7" Min="-5" Max="-3" Color="193,255,64" Visible="1"/>
+       <ColorBand Flags="7" Min="-3" Max="-1" Color="107,255,64" Visible="1"/>
+       <ColorBand Flags="7" Min="-1" Max="1" Color="64,255,107" Visible="1"/>
+       <ColorBand Flags="7" Min="1" Max="3" Color="64,255,193" Visible="1"/>
+       <ColorBand Flags="7" Min="3" Max="5" Color="64,236,255" Visible="1"/>
+       <ColorBand Flags="7" Min="5" Max="7" Color="64,150,255" Visible="1"/>
+       <ColorBand Flags="15" Min="7" Max="9" Color="64,64,255" Visible="1"/>
+      </EvenWidthBandAxis>
+     </ContourChannel>
+    </MoTeC.RainbowTrack>
+   </Controls>
+  </Worksheet>
+ </Worksheets>
+</Workbook>

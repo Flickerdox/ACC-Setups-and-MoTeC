@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United Kingdom.1252" DefaultLocale="C" Id="ride height &amp; rake">
+ <MathConstants>
+  <MathConstant Name="Sus Travel Offset Front" Value="13.86" Unit="mm"/>
+  <MathConstant Name="Sus Travel Offset Rear" Value="15.20" Unit="mm"/>
+  <MathConstant Name="Vehicle Wheelbase" Value="2700" Unit="mm"/>
+  <MathConstant Name="Vehicle Width" Value="2045" Unit="mm"/>
+  <MathConstant Name="Wheelbase (Avg)" Value="2600" Unit="mm"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Ride Height LF" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Ingame RH Front' [mm] - 'SUS_TRAVEL_LF' [mm]" SampleRate="0" Unit=""/>
+  <MathExpression Id="Ride Height RF" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Ingame RH Front' [mm] - 'SUS_TRAVEL_RF' [mm]" SampleRate="0" Unit=""/>
+  <MathExpression Id="Ride Height LR" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Ingame RH Rear' [mm] - 'SUS_TRAVEL_LR' [mm] + 'Rake Offset Adjustment' [mm]" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Ride Height RR" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'Ingame RH Rear' [mm] - 'SUS_TRAVEL_RR' [mm] + 'Rake Offset Adjustment' [mm]" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Rake in mm" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="((('Ride Height LR' + 'Ride Height RR') - ('Ride Height LF' + 'Ride Height RF')) / 2)
+" SampleRate="0" Unit=""/>
+  <MathExpression Id="Rake angle" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="atan('Rake in mm' / 'Vehicle Wheelbase' [mm]) * (180/'PI' [])" SampleRate="0" Unit="deg"/>
+  <MathExpression Id="Rake mean" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="'Rake in mm' - stat_mean('Rake in mm')" SampleRate="0" Unit=""/>
+  <MathExpression Id="Rake L-R" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="('Ride Height RR'-'Ride Height RF') - ('Ride Height LR'-'Ride Height LF')" SampleRate="0" Unit=""/>
+  <MathExpression Id="Pitch rate" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="derivative('Rake angle smooth')" SampleRate="0" Unit=""/>
+  <MathExpression Id="Rake angle smooth" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="smooth('Rake angle' [deg], 0.5)" SampleRate="0" Unit="deg"/>
+ </MathItems>
+</Maths>
