@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Details Locale="English_United Kingdom.1252" DefaultLocale="C">
- <Group Name="Custom" Editor="CustomDetailEditor">
-  <Detail Id="Static Front Ride" Type="3" Qty="m"/>
-  <Detail Id="Static Rear Ride" Type="3" Qty="m"/>
-  <Detail Id="Front Ride Offset" Type="3" Qty="m"/>
-  <Detail Id="Rear Ride Offset" Type="3" Qty="m"/>
- </Group>
-</Details>
